@@ -1,0 +1,66 @@
+[
+  {
+    "type": "folder",
+    "name": "Rolls Royce",
+    "children": [
+      {
+        "type": "folder",
+        "name": "Mercedes Benz",
+        "children": [
+          {
+            "type": "file",
+            "name": "attitude_oriented_salmon.htm",
+            "size": 8725788
+          },
+          { "type": "file", "name": "north_blue.shtml", "size": 1723787 }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "Mercedes Benz",
+    "children": [{ "type": "file", "name": "platforms.pdf", "size": 4930312 }]
+  },
+  {
+    "type": "folder",
+    "name": "Aston Martin",
+    "children": [
+      {
+        "type": "file",
+        "name": "re_engineered_soft_intuitive.gif",
+        "size": 1641272
+      },
+      {
+        "type": "folder",
+        "name": "Jeep",
+        "children": [
+          {
+            "type": "folder",
+            "name": "Chrysler",
+            "children": [
+              {
+                "type": "file",
+                "name": "paradigm_orchestrator_cyan.shtml",
+                "size": 2397317
+              }
+            ]
+          },
+          { "type": "file", "name": "gorgeous_matrix.mp4v", "size": 123968 },
+          { "type": "file", "name": "yen_digital_won.mpg4", "size": 9064643 }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "Chevrolet",
+    "children": [
+      {
+        "type": "file",
+        "name": "directives_multi_byte_sports.png",
+        "size": 8920169
+      }
+    ]
+  }
+]
