@@ -23,17 +23,9 @@ function SubSubFolder({ folder, subToggle, handleSubFolderClick }) {
             {file.type === 'file' ? (
               <File file={file} />
             ) : (
-              <FolderStyles>
-                {subToggle ? (
-                  <IoIosArrowForward onClick={handleSubFolderClick} />
-                ) : (
-                  <IoIosArrowDown onClick={handleSubFolderClick} />
-                )}
-                {subToggle ? (
-                  <AiFillFolder onClick={handleSubFolderClick} />
-                ) : (
-                  <AiFillFolderOpen onClick={handleSubFolderClick} />
-                )}
+              <FolderStyles onClick={handleSubFolderClick}>
+                {subToggle ? <IoIosArrowForward /> : <IoIosArrowDown />}
+                {subToggle ? <AiFillFolder /> : <AiFillFolderOpen />}
                 <p>{folder.children[0].children[0].name}</p>
               </FolderStyles>
             )}

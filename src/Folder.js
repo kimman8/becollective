@@ -9,6 +9,7 @@ import styled from 'styled-components';
 const FolderStyles = styled.div`
   display: flex;
   align-items: center;
+  cursor: pointer;
 `;
 
 function Folder({ folder }) {
@@ -18,17 +19,9 @@ function Folder({ folder }) {
   };
   return (
     <div>
-      <FolderStyles>
-        {toggle ? (
-          <IoIosArrowForward onClick={handleClick} />
-        ) : (
-          <IoIosArrowDown onClick={handleClick} />
-        )}
-        {toggle ? (
-          <AiFillFolder onClick={handleClick} />
-        ) : (
-          <AiFillFolderOpen onClick={handleClick} />
-        )}
+      <FolderStyles onClick={handleClick}>
+        {toggle ? <IoIosArrowForward /> : <IoIosArrowDown />}
+        {toggle ? <AiFillFolder /> : <AiFillFolderOpen />}
         <p>{folder.name}</p>
       </FolderStyles>
       <SubFolder folder={folder} handleClick={handleClick} toggle={toggle} />

@@ -9,6 +9,7 @@ import styled from 'styled-components';
 const SubFolderStyles = styled.ul`
   display: flex;
   align-items: center;
+  cursor: pointer;
 `;
 
 const FolderStyles = styled.div`
@@ -28,17 +29,9 @@ function SubFolder({ folder, toggle }) {
             {file.type === 'file' ? (
               <File file={file} />
             ) : (
-              <FolderStyles>
-                {subToggle ? (
-                  <IoIosArrowForward onClick={handleSubFolderClick} />
-                ) : (
-                  <IoIosArrowDown onClick={handleSubFolderClick} />
-                )}
-                {subToggle ? (
-                  <AiFillFolder onClick={handleSubFolderClick} />
-                ) : (
-                  <AiFillFolderOpen onClick={handleSubFolderClick} />
-                )}
+              <FolderStyles onClick={handleSubFolderClick}>
+                {subToggle ? <IoIosArrowForward /> : <IoIosArrowDown />}
+                {subToggle ? <AiFillFolder /> : <AiFillFolderOpen />}
                 <p>{folder.children[0].name}</p>
               </FolderStyles>
             )}
