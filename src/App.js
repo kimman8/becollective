@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-
 import Folder from './Folder';
 function App() {
   // function mapTypes(arr, acc = []) {
@@ -57,9 +56,9 @@ function App() {
   //   return sum;
   // };
   const [folderData, setFolderData] = useState([]);
-  const [error, setError] = useState();
-  const [loading, setLoading] = useState(true);
-  const [open, setOpen] = useState(false);
+  // const [error, setError] = useState();
+  // const [loading, setLoading] = useState(true);
+  // const [open, setOpen] = useState(false);
   // const clickToOpen = () => {
   //   setOpen(!open);
   //   console.log('working!!!!');
@@ -71,9 +70,9 @@ function App() {
       try {
         const dataFromServer = await fetchData();
         setFolderData(dataFromServer);
-        setLoading(false);
+        // setLoading(false);
       } catch (e) {
-        setError(e);
+        // setError(e);
         console.error(e);
       }
     };
@@ -99,6 +98,7 @@ function App() {
       {folderData && folderData.map((folder) => <Folder folder={folder} />)}
       {/* <p>Total Files: {mapTypes(folderData)}</p>
       <p>Total Filesize: {Math.floor(summer(folderData) / 1000000)}MB</p> */}
+      <hr />
       <p>Total Files: 5</p>
       <p>Total Filesize: 921MB</p>
     </div>

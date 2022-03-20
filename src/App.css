@@ -1,3 +1,14 @@
 .app {
   font-family: 'Roboto', sans-serif;
+  color: darkgray;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.app > hr {
+  height: 1px;
+  border: 0;
+  background-color: lightgray;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
