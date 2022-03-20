@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { AiFillFolder } from 'react-icons/ai';
 import { AiFillFolderOpen } from 'react-icons/ai';
 import { IoIosArrowForward } from 'react-icons/io';
@@ -16,7 +16,6 @@ function Folder({ folder }) {
   const handleClick = () => {
     setToggle(!toggle);
   };
-  const [subF, setSubF] = useState({});
   return (
     <div>
       <FolderStyles>

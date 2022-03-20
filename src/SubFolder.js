@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import File from './File';
 import SubSubFolder from './SubSubFolder';
 import { AiFillFolder } from 'react-icons/ai';
